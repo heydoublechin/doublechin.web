@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>00713 特性分析 | Doublechin 專欄</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 文章內頁特定樣式：實心白框保護內容 */
+        .article-page-container { max-width: 800px; margin: 40px auto; padding: 20px; }
+        .article-content { 
+            background-color: #FFFFFF; /* 實心白框，對應純白框框需求 */
+            padding: 50px; border-radius: var(--radius-main); box-shadow: 0 10px 40px rgba(0,0,0,0.1); 
+            /* 1. CSS 禁止選取 */
+            -webkit-user-select: none; user-select: none;
+        }
+        .article-body p { margin-bottom: 25px; line-height: 2; font-size: 1.1rem; }
+    </style>
+</head>
+<body oncontextmenu="return false;"> <div class="article-page-container">
+        <a href="index.html" style="color: var(--navy-blue); text-decoration: none; display: block; margin-bottom: 20px;">← 返回目錄</a>
+        <div class="article-content article-body">
+            <h1>00713 低波動選股邏輯：為什麼穩健最重要？</h1>
+            <p style="color: #718096; font-size: 0.9rem;">2026/01/15 | 雙下巴存股 | 理財</p>
+            <hr style="border: none; border-top: 1px solid #edf2f7; margin: 30px 0;">
+            <p>（這裡是您的原創內容，例如您的 00713 低波動分析、選股數據邏輯等。）</p>
+            <p>這是一篇測試文章內容，您會發現您無法反白選取這段文字，也無法按滑鼠右鍵進行複製。這能保護您的專業研究成果。</p>
+        </div>
+    </div>
+
+    <script>
+        // 3. JavaScript 禁止鍵盤 Ctrl+C 與 Ctrl+U (查看原始碼)
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 85)) {
+                alert("內容受版權保護，禁止複製或查看原始碼。");
+                return false;
+            }
+        };
+    </script>
+</body>
+</html>
