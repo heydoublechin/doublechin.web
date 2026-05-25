@@ -52,9 +52,9 @@
                     <span class="badge">#自我學習</span>
                 </div>
                 <ul class="article-list">
-                    <li><a href="#">[理財] 00713 低波動選股邏輯分析</a></li>
-                    <li><a href="#">[投資] 美股 VOO + QQQM 配置心法</a></li>
-                    <li><a href="#">[學習] 財務自律與體重管理的關係</a></li>
+                    <li><a href="article.html">[理財] 00713 低波動選股邏輯分析</a></li>
+                    <li><a href="article.html">[投資] 美股 VOO + QQQM 配置心法</a></li>
+                    <li><a href="article.html">[學習] 財務自律與體重管理的關係</a></li>
                 </ul>
                 <div class="notion-box">
                     <a href="你的Notion連結" target="_blank">查看詳細 Notion 理財筆記圖 ↗</a>
