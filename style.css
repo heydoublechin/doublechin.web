@@ -20,7 +20,7 @@
     --gray-4: #a6a6a6;
     
     /* 重點裝飾色 */
-    --accent-blue: #2C5282;
+    --accent-blue: #4274A3;
     --accent-yellow: #FEF3C7;
     
     /* 倒角設定 (微圓角) */
@@ -121,7 +121,7 @@ body {
 .tag { padding: 4px 10px; border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: bold; }
 .tag-blue { background-color: var(--morandi-blue); color: var(--bg-white); }
 .tag-yellow { background-color: var(--accent-yellow); color: var(--text-title); }
-.tag-gray { background-color: var(--gray-1); color: var(--bg-white); }
+.tag-gray { background-color: var(--gray-1); color: var(--text-title); }
 
 .read-more {
     display: inline-block; margin-top: 15px; color: var(--accent-blue);
