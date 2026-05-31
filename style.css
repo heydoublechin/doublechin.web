@@ -137,18 +137,3 @@ footer {
 .footer-links a { color: var(--gray-3); text-decoration: none; margin: 0 15px; font-size: 0.9rem; }
 .footer-links a:hover { color: var(--accent-blue); }
 .copyright { color: var(--gray-4); font-size: 0.8rem; }
-
-.sticky-card { position: sticky; top: 20px; }
-/* 當螢幕寬度小於 900px 時（通常是平板和手機）執行以下規則 */
-@media (max-width: 900px) {
-    .container {
-        /* 將原本的三欄改成單欄，由上往下排列 */
-        grid-template-columns: 1fr; 
-        padding: 10px;
-    }
-    
-    .hero-header {
-        padding: 30px 10px; /* 手機版的標題列不要那麼厚 */
-        border-radius: 0 0 20px 20px;
-    }
-}
