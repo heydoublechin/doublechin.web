@@ -1,81 +1,138 @@
-        
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doublechin Financial 雙下巴存股 | 專業理財門戶</title>
+    <title>雙下巴存股 | 小資理財與投資</title>
+    <!-- 導入 Google 字體，方便隨時替換 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="no-copy">
 
-    <header class="hero-header">
-        <div class="hero-content">
-            <h1>Doublechin Financial</h1>
-            <p class="hero-subtitle">小資理財 · ETF存股 · 財務管理</p>
-            <div class="hero-stats">
-                <span>低薪更要好好理財</span>
-                <span class="divider">|</span>
-                <span>年領股息 50k+</span>
-            </div>
+    <!-- 大橫幅與大頭照區塊 -->
+    <header class="banner-section">
+        <div class="banner-bg"></div>
+        <div class="profile-container">
+            <img src="avatar.jpg" alt="Doublechin Avatar" class="profile-avatar">
+            <h1 class="profile-name">Doublechin Financial</h1>
+            <p class="profile-bio">小資族理財分享 | 持有理財規劃人員證照</p>
         </div>
     </header>
 
     <div class="container">
-        
-        <aside class="left-panel">
-            <div class="card">
-                <img src="大頭照.jpg" alt="Doublechin 個人照" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 15px auto;">
-
-                <h2>關於我</h2>
-                <p>小資族 | 理財規劃人員證照</p>
-                
-                <div class="social-links">
-                    <a href="https://www.instagram.com/hey_doublechin/" target="_blank" class="social-btn">IG</a>
-                    <a href="你的FB連結" target="_blank" class="social-btn">FB</a>
-                    <a href="https://tinyurl.com/ypsk6xwp" target="_blank" class="social-btn">小紅書</a>
-                </div>
-            </div> <div class="card book-card">
-                <h2>📚 推薦好書清單</h2>
-                <ul class="book-list">
-                    <li><span class="book-tag">想好好理財</span><p>《上癮式存錢》</p></li>
-                    <li><span class="book-tag">小資學投資</span><p>《長期買進》</p>
-                                                              </p>《投資前最重要的事》</p></li>
-                    <li><span class="book-tag">一起來看書</span><p>《即將上架》</p></li>
-                </ul>
+        <!-- 動態數據區塊 -->
+        <section class="stats-section">
+            <div class="stat-box">
+                <span class="stat-title">網站瀏覽人次</span>
+                <span class="stat-number" data-target="15200">0</span>
             </div>
-        </aside>
+            <div class="stat-box">
+                <span class="stat-title">IG 追蹤人數</span>
+                <span class="stat-number" data-target="3800">0</span>
+            </div>
+        </section>
 
-        <main class="main-panel">
-            <div class="card">
-                <h2>精選專欄 (Insights)</h2>
-                <div class="tabs">
-                    <span class="badge">#理財</span>
-                    <span class="badge">#投資</span>
-                    <span class="badge">#自我學習</span>
+        <!-- 文章分類與展示區塊 (Tabs) -->
+        <main class="main-content">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="filterCategory('all')">ALL</button>
+                <button class="tab-btn" onclick="filterCategory('finance')">想好好理財</button>
+                <button class="tab-btn" onclick="filterCategory('invest')">小資學投資</button>
+                <button class="tab-btn" onclick="filterCategory('books')">財商智庫</button>
+            </div>
+
+            <!-- 文章卡片網格 -->
+            <div class="article-grid" id="articleGrid">
+                <!-- 卡片 1：理財 -->
+                <div class="article-card" data-category="finance">
+                    <img src="cover1.jpg" alt="文章封面" class="card-img">
+                    <div class="card-content">
+                        <span class="tag tag-blue">想好好理財</span>
+                        <h3>存股到底可不可以賣？小資族必看</h3>
+                        <p>分析長期投資與獲利了結的時機...</p>
+                        <a href="article-template.html" class="read-more">閱讀全文 ➔</a>
+                    </div>
                 </div>
-                <ul class="article-list">
-                    <li><a href="article.html">[理財] 存股到底可不可以賣？</a></li>
-                    <li><a href="article.html">[投資] 美股 VOO + QQQM 配置心法</a></li>
-                    <li><a href="article.html">[自我學習] 財務自律與體重管理的關係</a></li>
-                </ul>
-                <div class="notion-box">
-                    <a href="你的Notion連結" target="_blank">查看詳細 Notion 理財筆記圖 ↗</a>
+
+                <!-- 卡片 2：投資 -->
+                <div class="article-card" data-category="invest">
+                    <img src="cover2.jpg" alt="文章封面" class="card-img">
+                    <div class="card-content">
+                        <span class="tag tag-yellow">小資學投資</span>
+                        <h3>美股 VOO + QQQM 配置心法</h3>
+                        <p>透過指數型 ETF 打造穩健的資產組合...</p>
+                        <a href="article-template.html" class="read-more">閱讀全文 ➔</a>
+                    </div>
                 </div>
+
+                <!-- 卡片 3：書籍推薦 -->
+                <div class="article-card" data-category="books">
+                    <img src="book-cover.jpg" alt="書籍封面" class="card-img">
+                    <div class="card-content">
+                        <span class="tag tag-gray">財商智庫</span>
+                        <h3>《致富心態》讀後心得</h3>
+                        <p>理財不僅是數學問題，更是心理學...</p>
+                        <a href="article-template.html" class="read-more">閱讀全文 ➔</a>
+                    </div>
+                </div>
+                <!-- 後續可依此格式增加至 6 篇 -->
             </div>
         </main>
-
-        <aside class="right-panel">
-            <div class="card sticky-card">
-                <h2>一對一財務健檢</h2>
-                <p>從日常收支分析，
-                        開啟專屬的理財投資之路。</p>
-                <a href="https://forms.office.com/r/YQPJPdhuHM" target="_blank" class="cta-btn">立即預約問卷</a>
-                <p class="hint">數據將傳送至：heydoublechin@outlook.com</p>
-            </div>
-        </aside>
-
     </div>
 
+    <!-- 頁尾 (Footer) -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">聯絡我</a>
+            <a href="#">免責聲明與使用條款</a>
+            <a href="#">隱私權設定</a>
+        </div>
+        <p class="copyright">© 2026 Doublechin Financial. All rights reserved.</p>
+    </footer>
+
+    <!-- 功能腳本：數字動畫、防複製、Tab切換 -->
+    <script>
+        // 1. 防複製與防右鍵
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('copy', event => {
+            event.preventDefault();
+            alert('本網站內容受版權保護，禁止複製。');
+        });
+
+        // 2. 動態數字計數器
+        const counters = document.querySelectorAll('.stat-number');
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const inc = target / 100; // 調整除數可改變動畫速度
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 20);
+                } else {
+                    counter.innerText = target.toLocaleString(); // 加上千位數逗號
+                }
+            };
+            updateCount();
+        });
+
+        // 3. 文章分類切換 (Tab)
+        function filterCategory(category) {
+            // 切換按鈕樣式
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // 顯示/隱藏卡片
+            const cards = document.querySelectorAll('.article-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
