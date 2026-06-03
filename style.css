@@ -8,7 +8,7 @@
 }
 :root {
     /* 主體字型 (隨時可替換) */
-    --main-font: 'Noto Sans TC', sans-serif;
+    --main-font: 'jf-openhuninn', sans-serif;
     
     /* 標題與內文 */
     --text-title: #4D4B45;
