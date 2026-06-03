@@ -1,4 +1,11 @@
  /* === 色彩與全域變數設定 === */
+/* 宣告你的專屬字體 */
+@font-face {
+    font-family: 'MyBrandFont'; /* 幫你的字體取個好記的英文名字 */
+    src: url('mycustomfont.ttf') format('truetype'); /* 這裡的檔名必須跟上傳的一模一樣 */
+    font-weight: normal;
+    font-style: normal;
+}
 :root {
     /* 主體字型 (隨時可替換) */
     --main-font: 'Noto Sans TC', sans-serif;
