@@ -56,7 +56,7 @@ body {
 .banner-bg {
     height: 250px;
     /* 漸層帶透明度底圖 */
-    background: linear-gradient(to bottom, rgba(153, 183, 211, 0.3), rgba(247, 247, 247, 0.5)), url('封面.jpg') center;
+    background: linear-gradient(to bottom, rgba(153, 183, 211, 0.3), rgba(247, 247, 247, 0.5)), url('封面.jpg') center/cover;
 }
 
 .profile-avatar {
