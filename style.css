@@ -125,7 +125,7 @@ body {
 
 .read-more {
     display: inline-block; margin-top: 15px; color: var(--accent-blue);
-    text-decoration: none; font-weight: bold; font-size: 0.9rem;
+    text-decoration: none; font-weight: bold; font-size: 1.1rem;
 }
 
 /* === 頁尾 (Footer) === */
