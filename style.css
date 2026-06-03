@@ -115,9 +115,9 @@ body {
 
 ..card-img { 
     width: 100%; 
-    height: auto; /* 讓高度自動跟隨比例 */
     aspect-ratio: 16 / 9; /* 鎖定 16:9 黃金比例 */
-    object-fit: cover; }
+    object-fit: cover;
+display: block;}
 .card-content { padding: 20px; }
 .card-content h3 { color: var(--text-title); margin: 10px 0; font-size: 1.2rem; }
 .card-content p { color: var(--text-light); font-size: 0.95rem; }
