@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章內頁 | 雙下巴存股</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-copy">
+
+    <div class="container" style="max-width: 800px; margin-top: 40px;">
+        <a href="index.html" style="color: var(--gray-3); text-decoration: none;">← 返回首頁</a>
+        
+        <!-- 文章標題與版頭圖片 -->
+        <article style="background: var(--bg-white); padding: 40px; border-radius: var(--radius-md); margin-top: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+            <span class="tag tag-blue">想好好理財</span>
+            <h1 style="color: var(--text-title); margin: 15px 0;">【新手投資必看】存股可不可以賣？小資族必看的停利邏輯</h1>
+            <p style="color: var(--gray-4); font-size: 0.9rem;">發布日期：2026/06/01 | by 雙雙</p>
+            
+            <img src="cover1.jpg" style="width: 100%; border-radius: 12px; margin-bottom: 20px;">
+            
+            <!-- 內文區塊 -->
+            <div style="color: var(--text-body); line-height: 1.8; font-size: 1.05rem;">
+                <p>很多人問我，長期持有的 ETF 到底能不能賣出？其實，理財沒有絕對的標準答案...</p>
+                <!-- 這裡可以依序放入你的文字段落 -->
+            </div>
+        </article>
+
+        <!-- 讀者留言板區塊 (使用第三方嵌入) -->
+        <div style="background: var(--bg-white); padding: 40px; border-radius: var(--radius-md); margin-top: 30px;">
+            <h3 style="color: var(--text-title);">讀者留言</h3>
+            <div id="comments-section">
+                <!-- 
+                  【設定提示】
+                  因為 GitHub Pages 是靜態網頁，建議在此處貼上 Disqus (disqus.com) 
+                  或 Giscus (giscus.app) 提供的免費 HTML/JS 嵌入代碼。
+                  它會自動生成一個完整的留言與回覆介面。
+                -->
+                <p style="color: var(--gray-3);">載入留言板模組中...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 腳本：防複製防右鍵 -->
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('copy', event => {
+            event.preventDefault();
+            alert('本網站內容受版權保護，禁止複製。');
+        });
+    </script>
+</body>
+</html>
