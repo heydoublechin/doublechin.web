@@ -114,7 +114,7 @@ body {
     transform: scale(0.98); /* 稍微縮小模擬點按 */
 }
 
-..card-img { 
+.card-img { 
     width: 100%; 
     aspect-ratio: 16 / 9; /* 鎖定 16:9 黃金比例 */
     object-fit: cover;
