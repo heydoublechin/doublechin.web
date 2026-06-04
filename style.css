@@ -142,3 +142,69 @@ footer {
 .footer-links a { color: var(--gray-3); text-decoration: none; margin: 0 15px; font-size: 0.9rem; }
 .footer-links a:hover { color: var(--accent-blue); }
 .copyright { color: var(--gray-4); font-size: 0.8rem; }
+/* =========================================
+   文章內頁專用排版樣式 (Article Body)
+   ========================================= */
+
+/* 1. 統一文章內文的行距、字體大小與顏色 */
+.article-body {
+    color: var(--text-body);
+    line-height: 1.9;         /* 增加行距讓閱讀更舒適 */
+    font-size: 1.1rem;        /* 適合長文閱讀的字體大小 */
+    letter-spacing: 0.5px;    /* 字元間距稍微拉開 */
+}
+
+.article-body p {
+    margin-bottom: 20px;      /* 每個段落之間留出呼吸空間 */
+}
+
+/* 2. 帶有數字方塊的大標題 (H2) */
+.article-h2 {
+    font-size: 1.5rem;
+    color: var(--accent-blue);
+    border-bottom: 2px solid #eaeaea; /* 下方的分隔線 */
+    padding-bottom: 12px;
+    margin: 50px 0 20px 0;    /* 和上方的內容保持較大距離 */
+    display: flex;            /* 讓數字方塊和文字水平排列 */
+    align-items: center;
+    gap: 12px;                /* 數字方塊和文字的間距 */
+    font-weight: bold;
+}
+
+/* 大標題旁邊的數字方塊設計 */
+.step-num {
+    background-color: var(--accent-blue);
+    color: var(--bg-white);
+    padding: 4px 14px;
+    border-radius: 6px;
+    font-size: 1.4rem;
+}
+
+/* 3. 帶有左側藍色粗線的次標題 (H3) */
+.article-h3 {
+    font-size: 1.3rem;
+    color: var(--text-title);
+    border-left: 6px solid var(--accent-blue); /* 左側的藍色直線 */
+    padding-left: 12px;       /* 讓文字跟藍線保持距離 */
+    margin: 40px 0 15px 0;
+    font-weight: bold;
+}
+
+/* 4. 灰底的重點提示 / 延伸閱讀區塊 */
+.info-box {
+    background-color: var(--bg-light-gray);
+    padding: 25px;
+    border-radius: var(--radius-sm);
+    margin: 30px 0;
+    border-left: 4px solid var(--gray-3); /* 左側加一條低調的灰線 */
+}
+
+/* 延伸閱讀區塊內的連結顏色 */
+.info-box a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+.info-box a:hover {
+    text-decoration: underline;
+}
