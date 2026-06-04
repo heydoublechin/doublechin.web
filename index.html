@@ -120,10 +120,10 @@
             const updateCount = () => {
                 const target = +counter.getAttribute('data-target');
                 const count = +counter.innerText;
-                const inc = target / 50; // 調整除數可改變動畫速度
+                const inc = target / 100; // 調整除數可改變動畫速度
                 if (count < target) {
                     counter.innerText = Math.ceil(count + inc);
-                    setTimeout(updateCount, 5);
+                    setTimeout(updateCount, 10);
                 } else {
                     counter.innerText = target.toLocaleString(); // 加上千位數逗號
                 }
