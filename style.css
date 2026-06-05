@@ -6,9 +6,9 @@
     --main-font: 'Noto Serif TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     
     /* 專業標題與內文字流設定 */
-    --text-title: #3A3935;
-    --text-body: #4E4E4E;
-    --text-light: #6C6C6C;
+    --text-title: #3839B;
+    --text-body: #545454;
+    --text-light: #646464;
     
     /* 極簡多維背景色 */
     --bg-white: #ffffff;
@@ -23,7 +23,7 @@
     
     /* 精緻重點裝飾色 */
     --accent-blue: #4274A3;
-    --accent-yellow-light: rgba(254, 243, 199, 0.7);
+    --accent-yellow-light: #FFEB85;
     
     /* 高級圓角柔化設定 */
     --radius-sm: 8px;
