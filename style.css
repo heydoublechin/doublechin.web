@@ -174,7 +174,7 @@ body {
 .article-h2-num .step-num { background-color: var(--accent-blue); color: var(--bg-white); padding: 3px 14px; border-radius: 6px; font-size: 1.35rem; font-family: Arial, sans-serif; }
 
 /* 模組 B：優雅左側帶藍色粗邊框與底部細線大標題 */
-.article-h2-line { font-size: 1.6rem; color: var(--text-title); border-left: 6px solid var(--accent-blue); border-bottom: 1px solid #EAEAEA; padding-left: 14px; padding-bottom: 10px; margin: 48px 0 22px 0; font-weight: 700; }
+.article-h2-line { font-size: 1.6rem; color: var(--accent-blue); border-left: 6px solid var(--accent-blue); border-bottom: 1px solid #EAEAEA; padding-left: 14px; padding-bottom: 10px; margin: 48px 0 22px 0; font-weight: 700; }
 
 /* 模組 A：原版左側藍色粗線次標題 */
 .article-h3 { font-size: 1.35rem; color: var(--text-title); border-left: 5px solid var(--accent-blue); padding-left: 12px; margin: 38px 0 16px 0; font-weight: 700; background: transparent; }
