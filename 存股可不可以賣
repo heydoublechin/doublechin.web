@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章內頁 | 雙下巴存股</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-copy">
+
+<div class="reading-progress-container">
+        <div id="readingProgress" class="reading-progress-bar"></div>
+    </div>
+
+    <div class="container-narrow" style="margin-top: 30px;">
+        <a href="index.html" style="color: var(--gray-3); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 5px; transition: color 0.2s;" onmouseover="this.style.color='var(--accent-blue)'" onmouseout="this.style.color='var(--gray-3)'">← 返回首頁</a>
+        
+        <article style="background: var(--bg-white); padding: 45px 40px; border-radius: var(--radius-md); margin-top: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.02);" data-aos="fade-up">
+            <span class="tag tag-blue">想好好理財</span>
+            <h1 style="color: var(--text-title); margin: 18px 0 10px 0; font-size: 2.1rem; line-height: 1.35; font-weight: 700;">【新手投資必看】存股可不可以賣？</h1>
+            <h2 style="color: var(--text-light); margin: 0 0 15px 0; font-size: 1.35rem; font-weight: 400; line-height: 1.4;">小資族必看的停利關鍵</h2>
+            <p style="color: var(--gray-3); font-size: 0.9rem; margin-bottom: 25px;">發布日期：2026/06/01 | by 雙雙</p>
+            
+            <img src="存股可不可以賣.jpg" alt="存股可不可以賣首圖" class="article-hero-img">
+            
+            <div class="article-body">
+                <p data-aos="fade-up">很多人問我，長期持有的 ETF 到底能不能賣出？其實，理財沒有絕對的標準答案。這篇文章將帶你釐清幾個最重要的觀念，幫助你建立屬於自己的停利機制。</p>
+                
+                <h2 class="article-h2-num" data-aos="fade-up">
+                    <span class="step-num">1</span> 先講結論：到底可不可以賣？
+                </h2>
+                <p data-aos="fade-up">答案是可以的！但前提是你要有明確的<span class="mark-yellow">「賣出理由」</span>，而不是因為看到股票跌了感到恐慌，或是賺了一點點就急著落袋為安。</p>
+
+                <h3 class="article-h3" data-aos="fade-up">情況一：達到預設的財務目標</h3>
+                <p data-aos="fade-up">如果你存股的目的是為了買房的頭期款，當資產累積達到目標數字時，這時候分批獲利了結是非常合理的決策。我們必須堅守<strong>「先存後花、目標導向」</strong>的核心邏輯。</p>
+
+                <h3 class="article-h3-block" data-aos="fade-up">情況二：發現更好的投資標的</h3>
+                <p data-aos="fade-up">當市場上出現了殖利率更穩定、或是更符合你當前風險承受度的標的時，轉換標的也是一種策略。</p>
+
+                <div class="info-box" data-aos="fade-up">
+                    <p style="margin: 0; color: var(--gray-3); font-weight: bold;">延伸閱讀：</p>
+                    <a href="#">【ETF 配置指南】2026 年必懂的 VOO + QQQM 美股資產配置策略</a>
+                </div>
+
+                <h2 class="article-h2-line" data-aos="fade-up">賣出時的心理建設</h2>
+                <p data-aos="fade-up">投資最難的往往不是買進，而是賣出。賣飛了怕後悔，沒賣又怕抱上抱下。請記住，<span class="mark-yellow">沒有人能賣在絕對的最高點</span>，設定好紀律並確實執行，才是長期在市場活下來的王道。</p>
+                
+                <h3 class="article-h3" data-aos="fade-up">影音輔助學習</h3>
+                <div class="youtube-box" data-aos="fade-up">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                </div>
+            </div>
+        </article>
+
+        <div style="background: var(--bg-white); padding: 40px; border-radius: var(--radius-md); margin-top: 30px;" data-aos="fade-up">
+            <h3 style="color: var(--text-title); margin-top: 0; margin-bottom: 15px; font-weight: 700;">讀者留言</h3>
+            <div id="comments-section">
+                <p style="color: var(--gray-3); font-size: 0.95rem; margin: 0;">載入留言板模組中...</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">聯絡我</a>
+            <a href="#">免責聲明與使用條款</a>
+            <a href="#">隱私權設定</a>
+        </div>
+        <p class="copyright">© 2026 Doublechin Financial. All rights reserved.</p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" title="回到頂部">↑</button>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // 初始化 AOS
+        AOS.init({ duration: 800, once: true });
+
+        // 1. 全防護防右鍵與防拷貝機制
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('copy', event => {
+            event.preventDefault();
+            alert('本網站內容受全權版權保護，全面禁止複製。');
+        });
+        document.addEventListener('keydown', event => {
+            if (event.keyCode === 123 || 
+                (event.ctrlKey && event.shiftKey && (event.keyCode === 73 || event.keyCode === 67)) || 
+                (event.ctrlKey && event.keyCode === 85)) {
+                event.preventDefault();
+                return false;
+            }
+        });
+
+        // 2. 頂部藍色滾動閱讀進度條 JS 邏輯
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('readingProgress').style.width = scrolled + '%';
+        });
+
+        // 3. 模組化防呆自動化：讓所有 .info-box 內部的 a 標籤全數自動帶有 target="_blank"
+        document.querySelectorAll('.info-box a').forEach(link => {
+            link.setAttribute('target', '_blank');
+        });
+
+        // 4. 回到頂部按鈕邏輯
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
